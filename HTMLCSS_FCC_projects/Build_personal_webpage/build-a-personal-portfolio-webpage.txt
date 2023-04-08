@@ -1,0 +1,215 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Personal Portfolio webpage</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="main.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  </head>
+<body>
+    
+<!--START NAVIGATION-->
+  <header id="header"> 
+      <nav id="navbar" a="nav-link">
+        <ul id="nav-list">
+          <li><a class="nav-link" href="#welcome-section">About</a></li>
+          <li><a class="nav-link" href="#projects">Work</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+<!--END NAVIGATION-->
+<!--START WELCOME SECTION-->
+    <section id="welcome-section" class="welcome-section">
+      <h1><i>Welcome</i></h1>
+      <p>to</p>
+      <h2><i>JSM-Webdev.</i></h2>
+      <p>Let me introduce myself, my name is Jacqueline and this is a FreecodeCamp personal portfolio webpage project. It is a mock-up of a webpage.</p>
+    </section>
+<!--END WELCOME SECTION-->   
+<!--START PROJECT SECTION-->
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header">These are some of my Projects</h2>
+      <div class="projects-grid">
+          <a href="">
+          <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="Tribute Page"/>
+          <p class="project-tile">Tribute Page</p>
+        </a>
+
+          <a href="">
+          <img class="project-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt="" />
+          <p class="project-tile">Random Quote machine</p>
+          </a>
+
+          <a href="">
+          <img class="project-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="" />
+          <p class="project-tile">Calculator</p>
+          </a>
+        
+      </div>
+    </section>
+<!--END PROJECT SECTION-->
+<!--START CONTACT SECTION-->
+    <section id="contact" class="contact-section">
+      <div id="contact-header">
+      <h2>Let's work together...</h2>
+      <p id="contact-p">How do you take your coffee?</p>   
+      </div>
+      <div id="contact-links">
+        <a href="" id="profile-link" target="_blank">Github</a>
+      </div>
+
+    </section>
+<!--END CONTACT SECTION-->    
+<footer>
+</footer>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body { 
+  font-family:'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 110;
+  font-size: 4em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+@media (max-width: 800px) {
+  h2{
+    font-size: 2rem;
+  }
+}
+
+/* Navigation */
+
+#header { 
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d8eebd;
+}
+
+#nav-list {  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #75a53a;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 1rem 2rem;
+}
+
+a:hover{
+  background-color: #2d0c0e;
+}
+
+/* End Navigation */
+/* Welcome-Section */
+#welcome-section{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d02632;
+  margin: 0;
+  padding: 0px 40px 0px 30px;
+  
+  
+} 
+#welcome-section > p {
+  font-size: 28;
+  font-weight: 500;
+  }
+/* End Welcome-section */
+/* Project section */
+#projects {
+  margin: 0;
+  padding: 10rem 2rem;
+  text-align: center;
+  background-color: #d8eebd;
+  }
+.projects-section-header > h2{
+  text-align: center;
+}
+.project-image{
+  height: calc(100% - 6.0rem);
+  width: 100%;
+  margin: 0;
+  padding: 20;
+  object-fit: cover;
+}
+
+.project-tile{
+  color: #2d0c0e;
+  width: 100%;
+  margin: 0;
+} 
+
+.projects-grid {
+  display: grid;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  }
+/* Contact */
+.contact-section {
+  background-color: #d02632;
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+#contact-p{
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 100;
+  text-align: center;
+}
+
+
+
+** end of undefined **
+

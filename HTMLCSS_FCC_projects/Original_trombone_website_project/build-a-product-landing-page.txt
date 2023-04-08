@@ -1,0 +1,277 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/dc1934eacf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css"/>
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+    <div class="logo">
+    <header id="header">
+      <div class="logo">
+        <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="original trombones logo.png"/>
+    </div>
+    <nav id="nav-bar">
+      <ul>
+        <li> <a class="nav-link" href="#features">Features</a>
+        </li>
+        <li> <a class="nav-link" href="#howItWorks">How it Works</a>
+        </li>
+        <li> <a class="nav-link" href="#pricing">Pricing</a>
+        </li>
+      </ul>
+    </nav>
+    </header>
+    <section id="hero">
+      <h2>Handcrafted, home-made masterpieces</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" type="email" name="email" placeholder="Enter email address"required/>
+      <input id="submit" type="submit" value="GET STARTED" class="btn"/>
+    </form>
+    </section>
+    <div class="container">
+      <div id="features">
+        <div class="grid">
+        <div class="icon">
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        </div>
+          <div class="text">
+          <h2>Premium Materials</h2>
+          <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+          </div>
+        </div>
+      </div>
+
+    <div class="grid">
+        <div class="icon">
+        <i class="fa-solid fa-truck"></i>
+        </div>
+        <div class="text">
+          <h2>Fast Shipping</h2>
+          <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+        </div>
+    </div>
+     
+      <div class="grid">
+        <div class="icon">
+        <i class="fa-solid fa-battery-full"></i>
+        </div>
+        <div class="text">
+          <h2>Quality Assurance</h2>
+          <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div id="howItWorks">
+    <iframe id="video" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" width="515" height="325" title="Product video" frameborder="0">
+</iframe>
+    </div>
+      <div id="pricing">
+      <div class="product">
+        <div class="level">TENOR TROMBONE</div>
+          <h2>$600</h2>
+          <ol>
+            <li>Lorem Ipsum</li>
+            <li>Lorem Ipsum</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem Ipsum</li>
+          </ol>
+           <button class="btn">Select</button>
+           </div>
+           <div class="product">
+           <div class="level">BASS TROMBONE</div>
+            <h2>$900</h2>
+              <ol>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem Ipsum</li>
+              </ol>
+           <button class="btn">Select</button>
+           </div>
+           <div class="product">
+           <div class="level">VALVE TROMBONE</div>
+            <h2>$1200</h2>
+              <ol>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem Ipsum</li>
+              </ol>
+           <button class="btn">Select</button>
+            </div>
+     <footer></footer> 
+     </div> 
+    </div>
+  </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background-color: #eee;
+  font-family: 'lato', Sans-serif;
+}
+
+#header {
+position: fixed;  
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+
+.logo{
+  width: 60vw;
+}
+
+#header-img{
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+}
+
+#nav-bar{
+  font-weight: 400;
+  width: 35vw;
+  }
+
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li{
+  list-style: none;
+}
+
+.nav-link{
+  color: black;
+  text-decoration: none;
+}
+
+#hero, form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero input[type="email"]{
+  max-width: 275px;
+  min-width: 100px;
+  width: 275px;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+#hero input[type="submit"]{
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  background-color: #f1c40f;
+  border: none;
+  font-weight: 900;
+  font-size: 1em;
+}
+
+.features {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ max-width: 1000px;
+ margin: 0;
+ padding: 0; 
+}
+
+.grid {
+  display: flex;
+  flex-direction: row; 
+  max-width: 800px;
+  width: 100%;
+}
+
+.icon {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.fa-solid {
+  color: darkorange;
+  font-size: 50px;
+}
+
+#howItWorks {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pricing {
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 60px;
+  margin-bottom: 90px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(80%/3);
+  border: 1px solid black;
+  margin: 20px;
+  border-radius: 3px;
+}
+
+.level {
+  background-color: #ddd;
+  color: black;
+  width: 100%;
+  padding: 15px 0;
+  font-weight: 700;
+}
+
+ol > li{
+  margin-right: 25px;
+}
+
+.btn {
+  background-color: #f1c40f;
+  margin: 15px 0;
+  font-weight: 400;
+  border: 0;
+  width: 30%;
+  height: 30px;
+  font-size: 1em;
+  min-width: 100px;
+}
+
+@media(max-width: 700px){
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+  } 
+  .product{
+    width: 300px;
+  }
+
+** end of undefined **
+
